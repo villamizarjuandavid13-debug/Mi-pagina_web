@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf2f2;
+}
+
+.menu {
+    background: white;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu a {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+.hero {
+    background: #dc3545;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem 3rem;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.hero h2, .hero p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+#tienda h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+#tienda > p, #tienda h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#tienda > div[style*="width:300px"] {
+    display: inline-block;
+    width: 300px;
+    margin: 1rem;
+    background: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#tienda img[style*="width:100%"] {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.btn, .btn-maps {
+    display: inline-block;
+    color: #dc3545;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+}
+
+/* CONTACTO NEGRO SIMPLE */
+footer {
+    background: #fdf2f2; /* MISMO FONDO PÁGINA */
+    color: black;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+footer h2 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: black;
+}
+
+footer a {
+    color: #dc3545;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    #tienda > div[style*="width:300px"] { 
+        display: block; 
+        margin: 1rem auto; 
+        width: 90%; 
+    }
+}
